@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodaja Cvijeća</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://www.paypal.com/sdk/js?client-id=Afzc1IlgRQANkX3NGrGcsvTxA5EtNwUQZeLbuicoNCM-hZxx13uq2LyJESOmeue6FLZJELnCp4xTOoXn"></script>
+    
+
+    
+
+    <script src="index.js"></script>
+
+
+
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .header {
+       
+        position: relative;
+        z-index: 1;
+        background: url('images/desktopBG1.png') no-repeat;
+        background-size: cover;
+    }
+
+    .text-animation {
+        min-height: 300px; /* Visina text-animation sekcije */
+        position: relative;
+      
+    }
+
+    .full-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        z-index: 0;
+        background: url('images/desktopBG1.png') no-repeat;
+        background-size: cover;
+       
+    }
+
+
+/* Media upit za mobilne uređaje */
+@media only screen and (max-width: 768px) {
+    .header {
+        background: url('images/mobBG1.png') no-repeat;
+        background-size: cover;
+    }
+
+    .full-background {
+        background: url('images/mobBG1.png') no-repeat;
+        background-size: cover;
+        height: 86%;
+    }
+}
+</style>
+
+
+<body>
+      <div class="full-background"></div>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="images/l1.png" alt="Logo Cvijećara"></a>
+        </div>
+            
+        </div>
+      
+        
+        <div class="menu-toggle">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="buketi.html" style="color: red;">AKCIJA</a></li>
+
+            <li><a href="godisnjice.html">GODIŠNJICE</a></li>
+            <li><a href="#">VJENČANJA</a></li>
+            <li><a href="galerija.html">GALERIJA</a></li>
+            <li><a href="contact.html">KONTAKT</a></li>
+            <li><a href="about.html">O NAMA</a></li>
+            <li><a href="korpa.html">KORPA <i class="fas fa-shopping-cart"></i></a></li>
+
+            <!-- Dodajte ostale opcije menija ovdje -->
+        </ul>
+    </nav>
+</header>
+
+
+    
+
+
+<div class="text-animation" style="text-align: center; ">
+      
+    <div style="text-align: center;">
+        <hr style="border: 1px solid #f0c769; width: 10%; background-image: linear-gradient(90deg, #f0c769 2%, #ffe28b 42%, #d0a651 71%, #ffecb2); -webkit-background-clip: text; background-clip: text; color: transparent; margin-top: 1px; margin-right: 1265px;">
+    
+        <p style="font-weight: bold; margin-top: 1px; margin-right: 850px; font-size: 20px;">GODISNJICA</p>
+    
+        <hr style="border: 1px solid #f0c769; width: 10%; background-image: linear-gradient(90deg, #f0c769 2%, #ffe28b 42%, #d0a651 71%, #ffecb2); -webkit-background-clip: text; background-clip: text; color: transparent; margin-top: -10px; margin-right: 1265px;">
+   
+        <p style="font-weight: bold; margin-top: 1px; margin-right: 850px; font-size: 80px;">25 GODINA <br> CVJECARE NERINA </p>
+
+        
+
+
+        <p style="font-weight: bold; margin-top: -80px; margin-right: 850px; font-size: 20px; color: aliceblue;">From a little grocery shop in 1824 to where we are today, <br> we couldn't have done it without you, the British public. So <br> as we celebrate turning 200 this year, we’re reflecting on <br>all of the special moments we’ve shared.</p>
+
+        <p style="font-weight: bold; margin-top: 40px; margin-right: 850px; font-size: 20px; color: aliceblue;">See how you can join in the celebrations.</p>
+
+   
+    </div>
+    
+    
+    
+</div>
+</div>
+    
+
+
+
+<style>
+    @media only screen and (max-width: 768px) {
+        /* Stilovi za mobilne uređaje */
+        .text-animation div {
+            margin-right: -850px; /* Prilagodite margine prema potrebi */
+        }
+
+        .text-animation p {
+            margin-right: -30px; /* Prilagodite margine prema potrebi */
+            margin-top: 10px !important;
+            font-size: 22px !important; /* Dodajte !important kako biste osigurali primjenu veličine fonta */
+        }
+
+        .text-animation hr {
+            margin-right: 960px !important; /* Prilagodite margine prema potrebi */
+        }
+
+        /* Prilagodba za "ANNIVERSARY" - Smanji veličinu fonta */
+        .text-animation p:nth-child(2) {
+            font-size: 16px !important; /* Smanjite veličinu fonta prema potrebi */
+        }
+
+        /* Prilagodba za "200 YEARS" - Povećaj veličinu fonta */
+        .text-animation p:nth-child(4) {
+            font-size: 40px !important; /* Povećajte veličinu fonta prema potrebi */
+        }
+
+        
+
+        /* Prilagodba za "From a little grocery shop..." - Smanji veličinu fonta */
+        .text-animation p:nth-last-child(2) {
+            font-size: 16px !important; /* Smanjite veličinu fonta prema potrebi */
+        }
+
+        /* Prilagodba za "See how you can join in the celebrations." - Smanji veličinu fonta */
+        .text-animation p:last-child {
+            font-size: 12px !important; /* Smanjite veličinu fonta prema potrebi */
+        }
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<div class="client-title">
+    <div class="client-title-box">
+        <h2>NAŠI PROIZVODI</h2>
+    </div>
+</div>
+
+
+
+    <div class="slick-slider">
+        <div class="float">
+          <div class="box">
+            <a href="fer.html">
+                <img src="images/ferr-removebg-preview.png" alt="Slika 1">
+              </a>
+            <h3>FERRERO </h3>
+          </div>
+          <div class="box">
+            <a href="raf.html">
+            <img src="images/raffaello.png" alt="Slika 1">
+        </a>
+            <h3>RAFFAELO</h3>
+          </div>
+          <div class="box">
+            <a href="bear.html">
+            <img src="images/plisani-meda.png" alt="Slika 1">
+        </a>
+            <h3>PLIŠANI MEDO</h3>
+          </div>
+          <div class="box">
+            <a href="baloni.html">
+            <img src="images/helijumski-baloni.png" alt="Slika 1">
+        </a>
+            <h3>BALONI</h3>
+          </div>
+          <div class="box">
+            <a href="fer.html">
+            <img src="images/ferr-removebg-preview.png" alt="Slika 1">
+        </a>
+            <h3>FERRERO</h3>
+          </div>
+          <div class="box">
+            <a href="raf.html">
+            <img src="images/raffaello.png" alt="Slika 1">
+        </a>
+            <h3>RAFFAELO</h3>
+          </div>
+          <div class="box">
+            <a href="bear.html">
+            <img src="images/plisani-meda.png" alt="Slika 1">
+        </a>
+            <h3>PLIŠANI MEDO</h3>
+          </div>
+          <div class="box">
+            <a href="baloni.html">
+            <img src="images/helijumski-baloni.png" alt="Slika 1">
+        </a>
+            <h3>BALONI</h3>
+          </div>
+          <div class="box">
+            <a href="fer.html">
+            <img src="images/ferr-removebg-preview.png" alt="Slika 1">
+        </a>
+            <h3>BALONI</h3>
+          </div>
+          
+
+          <!-- Dodajte ostale boxove ovdje -->
+        </div>
+      </div>
+      
+      
+      
+      <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Slick Slider JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<!-- Custom Script -->
+<script>
+  $(document).ready(function(){
+    $('.float').slick({
+      slidesToShow: 3, // Show three slides at once
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000, // Change this value to adjust slide speed
+      infinite: true,
+      pauseOnHover: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1 // Show only one slide on smaller screens
+          }
+        }
+      ]
+    });
+  });
+</script>
+
+      
+
+
+
+
+
+
+
+
+    
+
+   
+    
+    <hr style="border: 1px solid rgb(212, 212, 212); width: 80%;">
+
+    <div class="krugovi-container">
+        <div class="krug">
+            <div class="ikonica">
+                <a href="buketi.html">
+                    <i class="fas fa-star"></i>
+                  </a>
+                  
+               
+            </div>
+        </div>
+        <div class="krug">
+            <div class="ikonica">
+                <a href="buketi.html">
+                <i class="fas fa-percent"></i>
+            </a>
+                
+            </div>
+        </div>
+        <div class="krug">
+            <div class="ikonica">
+                <i class="fas fa-gift"></i>
+                
+            </div>
+        </div>
+        <div class="krug">
+            <div class="ikonica">
+                <i class="fas fa-heart"></i>
+                
+            </div>
+        </div>
+        <div class="krug">
+            <div class="ikonica">
+                <i class="fas fa-birthday-cake"></i>
+                
+            </div>
+        </div>
+        <div class="krug">
+            <div class="ikonica">
+                <i class="fas fa-baby"></i>
+                
+            </div>
+        </div>
+        
+               
+            </div>
+        </div>
+    </div>  
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+                nextArrow: '<button type="button" class="slick-next">Next</button>',
+            });
+        });
+    </script>
+    
+    
+
+    <hr style="border: 1px solid rgb(212, 212, 212); width: 80%;">
+
+    <section class="flowers">
+        <div class="client-title-box">
+        <h2>Cvijeće na akciji</h2>
+    </div>
+        <div class="flower-container">
+            <div class="flower-box">
+                <a href="cv1.html">
+                    <div class="flower">
+                        <img src="images/D4.jpeg" alt="Cvijet 1">
+                        <div class="flower-details">
+                            <p class="price">20KM <span class="discount-price">25KM</span></p>
+                            <div class="name-box">
+                                <p class="name">Cvijet 1</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="flower-box">
+                <a href="cv2.html">
+                <div class="flower">
+                    <img src="images/d5.jpg" alt="Cvijet 2">
+                    <div class="flower-details">
+                        <p class="price">25KM <span class="discount-price">30KM</span></p>
+                        <div class="name-box">
+                            <p class="name">Cvijet 1</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            </div>
+            <div class="flower-box">
+                <a href="cv3.html">
+                <div class="flower">
+                    <img src="images/d6.jpg" alt="Cvijet 2">
+                    <div class="flower-details">
+                        <p class="price">30KM <span class="discount-price">40KM</span></p>
+                        <div class="name-box">
+                            <p class="name">Cvijet 1</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            </div>
+            <div class="flower-box">
+                <a href="cv4.html">
+                <div class="flower">
+                    <img src="images/d2.jpg" alt="Cvijet 2">
+                    <div class="flower-details">
+                        <p class="price">35KM <span class="discount-price">50KM</span></p>
+                        <div class="name-box">
+                            <p class="name">Cvijet 1</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            </div>
+        </div>
+        <div class="flower-container">
+            <!-- Ponavljajte isti obrazac za ostale proizvode -->
+        </div>
+
+         <!-- Dodajte link "Pogledaj sve" -->
+    <div class="view-all-link">
+        <a href="buketi.html">Pogledaj sve</a>
+    </div>
+    </section>
+    
+    
+    <hr style="border: 1px solid rgb(212, 212, 212); width: 90%;">
+
+
+    <div class="client-title">
+        <div class="client-title-box">
+        <h2>NAŠI KLIJENTI</h2>
+    </div>
+</div>
+    <div class="floating-images">
+        
+        <img src="images/amazon-removebg-preview.png" alt="Amazon Logo">
+        <img src="images/bingo-removebg-preview.png" alt="Google Logo">
+        <img src="images/konzum-removebg-preview.png" alt="Apple Logo">
+        <img src="images/logo-coca-cola.png" alt="Microsoft Logo">
+        <img src="images/logo-godrej.png" alt="Facebook Logo">
+        <img src="images/logo-oppo.png" alt="Google Logo">
+        <img src="images/logo-paypal.png" alt="Apple Logo">
+        <img src="images/logo-philips.png" alt="Microsoft Logo">
+        <img src="images/robot-removebg-preview.png" alt="Facebook Logo">
+        
+    </div>
+    <hr style="border: 1px solid rgb(212, 212, 212); width: 90%;">
+    <section class="flowers">
+        </div>
+        <div class="client-title-box">
+        <h2>Ostali artikli</h2>
+    </div>
+        <div class="flower-container">
+            <div class="flower-box">
+                <a href="raf.html">
+                    <div class="flower">
+                        <img src="images/raf-removebg-preview.png" alt="Cvijet 1">
+                        <div class="flower-details">
+                            <p class="price">10KM <span class="discount-price">15KM</span></p>
+                            <div class="name-box">
+                                <p class="name">RAFFAELO</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="flower-box">
+                <a href="fer.html">
+                <div class="flower">
+                    <img src="images/ferr-removebg-preview.png" alt="Cvijet 2">
+                    <div class="flower-details">
+                        <p class="price">15KM <span class="discount-price">20KM</span></p>
+                        <div class="name-box">
+                            <p class="name">FERRERO ROCHER</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            </div>
+            <div class="flower-box">
+                <a href="baloni.html">
+                <div class="flower">
+                    <img src="images/balon-removebg-preview.png" alt="Cvijet 2">
+                    <div class="flower-details">
+                        <p class="price">15KM <span class="discount-price">20KM</span></p>
+                        <div class="name-box">
+                            <p class="name">BALONI</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            </div>
+            <div class="flower-box">
+                <a href="bear.html">
+                <div class="flower">
+                    <img src="images/bear.png" alt="Cvijet 4">
+                    <div class="flower-details">
+                        <p class="price">18KM <span class="discount-price">23KM</span></p>
+                        <div class="name-box">
+                            <p class="name">PLIŠANI MEDVJED</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            </div>
+        </div>
+        
+        <div class="flower-container">
+            <!-- Ponavljajte isti obrazac za ostale proizvode -->
+        </div>
+    
+         <!-- Dodajte link "Pogledaj sve" -->
+    <div class="view-all-link">
+        <a href="buketi.html">Pogledaj sve</a>
+    </div>
+    </section>
+
+    <hr style="border: 1px solid rgb(212, 212, 212); width: 90%;">
+
+    <section class="flowers">
+        <div class="client-title-box">
+        <h2>Godišnjice</h2>
+    </div>
+        <div class="flower-container">
+            <div class="flower-box">
+                <a href="cv1.html">
+                    <div class="flower">
+                        <img src="images/D2.jpg" alt="Cvijet 1">
+                        <div class="flower-details">
+                            <p class="price">10KM</p>
+                            <p class="name">Cvijet 1</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="flower-box">
+                <div class="flower">
+                    <img src="images/D2.jpg" alt="Cvijet 2">
+                    <div class="flower-details">
+                        <p class="price">15KM</p>
+                        <p class="name">Cvijet 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-box">
+                <div class="flower">
+                    <img src="images/D3.jpeg" alt="Cvijet 3">
+                    <div class="flower-details">
+                        <p class="price">12KM</p>
+                        <p class="name">Cvijet 3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-box">
+                <div class="flower">
+                    <img src="images/D4.jpeg" alt="Cvijet 4">
+                    <div class="flower-details">
+                        <p class="price">18KM</p>
+                        <p class="name">Cvijet 4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flower-container">
+            <div class="flower-box">
+                <div class="flower">
+                    <img src="images/D4.jpeg" alt="Cvijet 1">
+                    <div class="flower-details">
+                        <p class="price">10KM</p>
+                        <p class="name">Cvijet 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-box">
+                <div class="flower">
+                    <img src="images/D2.jpg" alt="Cvijet 2">
+                    <div class="flower-details">
+                        <p class="price">15KM</p>
+                        <p class="name">Cvijet 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-box">
+                <div class="flower">
+                    <img src="images/D3.jpeg" alt="Cvijet 3">
+                    <div class="flower-details">
+                        <p class="price">12KM</p>
+                        <p class="name">Cvijet 3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-box">
+                <div class="flower">
+                    <img src="images/D4.jpeg" alt="Cvijet 4">
+                    <div class="flower-details">
+                        <p class="price">18KM</p>
+                        <p class="name">Cvijet 4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+           <!-- Dodajte link "Pogledaj sve" -->
+    <div class="view-all-link">
+        <a href="godisnjice.html">Pogledaj sve</a>
+    </div>
+        <!-- Dodajte ovdje ostale proizvode -->
+    </section>
+
+
+
+    
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/nerina.ba/"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-viber"></i></a>
+                <a href="https://www.instagram.com/cvjecaranerina/?hl=en"><i class="fab fa-instagram"></i></a>
+              </div>
+              
+            <div class="copyright">
+                &copy; 2023. Sva prava zadržana.
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+</body>
+</html>
