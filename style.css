@@ -1352,6 +1352,7 @@ body {
 }
 
 
+/* Standardni stilovi */
 .celebration-box {
     display: inline-block;
     padding: 10px;
@@ -1369,26 +1370,22 @@ body {
     margin: 0;
 }
 
-/* Stilovi za mobilne uređaje */
+/* Dodatni stil za mobilne uređaje */
 @media screen and (max-width: 768px) {
     .celebration-box {
         display: block;
-        margin-left: 65px;
+        margin-left: 85px;
         margin-top: 20px;
-        width: 200px;
+        width: 170px;
     }
 
     .celebration-box p {
-        font-size: 16px;
-    }
-
-    /* Dodatni stil za povećanje fonta samo na mobilnim uređajima */
-    @media screen and (max-width: 768px) {
-        .celebration-box {
-            font-size: 18px !important; /* Prilagodite prema potrebi */
-        }
+       margin-left: -20px;
+       margin-top: -50px;
     }
 }
+
+
 
 
 
