@@ -1319,8 +1319,23 @@ body {
 
 
 
-
-
+.celebration-box {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #f0c769 2%, #ffe28b 42%, #d0a651 71%, #ffecb2); /* Gradijentna boja pozadine box-a */
+    color: #462071; /* Boja teksta unutar box-a (zlatna) */
+    margin-top: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Dodajemo sjenku oko box-a */
+    margin-right: 900px;
+  }
+  
+  .celebration-box p {
+    color: #462071; /* Boja teksta unutar box-a */
+    margin: 0; /* Uklanja unutarnji prostor oko teksta */
+  }
+  
 
 
 
