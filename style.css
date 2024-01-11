@@ -1233,17 +1233,22 @@ input[type="checkbox"]:checked + label {
 
 
 
+.floating-images-container {
+    overflow-x: hidden; /* Onemogućavanje horizontalnog skrolovanja */
+    display: flex;
+}
+
 .floating-images {
     display: flex;
     overflow: hidden;
-    animation: floatAnimation 20s linear infinite; /* Povećan trajanje animacije */
+    animation: floatAnimation 20s linear infinite;
 }
 
 .floating-images img {
     margin-right: 20px;
     width: 100px;
     height: auto;
-    transform: translateX(100%); /* Postavljanje početne pozicije slika */
+    transform: translateX(100%);
 }
 
 @keyframes floatAnimation {
@@ -1254,6 +1259,7 @@ input[type="checkbox"]:checked + label {
         transform: translateX(-100%);
     }
 }
+
 
 
 @media (max-width: 767px) {
@@ -1293,7 +1299,7 @@ body {
 
 .client-title {
     text-align: center;
-    margin-bottom: 20px; /* Prilagodite razmak prema želji */
+    margin-top: 200px; /* Prilagodite razmak prema želji */
     
 }
 
@@ -1319,30 +1325,73 @@ body {
 
 
 
+
+.client-title-fox {
+    text-align: center;
+    margin-top: 20px; /* Prilagodite razmak prema želji */
+    
+}
+
+.client-title-fox h2 {
+    font-weight: bold;
+    background-image: linear-gradient(90deg, #f0c769 2%, #ffe28b 42%, #d0a651 71%, #ffecb2); /* Gradijentna boja teksta */
+    -webkit-background-clip: text; /* Kako bi se tekst ograničio na gradijent */
+    background-clip: text; /* Kako bi se tekst ograničio na gradijent */
+    color: transparent; /* Tekst postavljamo na transparent */
+    margin-top: 1px;
+}
+
+
+.client-title-box-fox {
+    background-color: #462071; /* Ljubičasta boja pozadine */
+    padding: 10px; /* Unutarnji razmak */
+    border-radius: 10px; /* Zaobljeni rubovi */
+    display: inline-block; /* Da okvir bude samo oko teksta */
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+
 .celebration-box {
     display: inline-block;
     padding: 10px;
     border-radius: 10px;
     font-weight: bold;
-    background: linear-gradient(90deg, #f0c769 2%, #ffe28b 42%, #d0a651 71%, #ffecb2); /* Gradijentna boja pozadine box-a */
-    color: #462071; /* Boja teksta unutar box-a (zlatna) */
+    background: linear-gradient(90deg, #f0c769 2%, #ffe28b 42%, #d0a651 71%, #ffecb2);
+    color: #462071;
     margin-top: 1px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Dodajemo sjenku oko box-a */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-right: 900px;
-  }
-  
-  .celebration-box p {
-    color: #462071; /* Boja teksta unutar box-a */
-    margin: 0; /* Uklanja unutarnji prostor oko teksta */
-  }
-  
+}
 
-  @media screen and (max-width: 768px) {
+.celebration-box p {
+    color: #462071;
+    margin: 0;
+}
+
+/* Stilovi za mobilne uređaje */
+@media screen and (max-width: 768px) {
     .celebration-box {
-       margin-right: 30px;
-        margin-top: 150px;
+        display: block;
+        margin-left: 65px;
+        margin-top: 20px;
+        width: 200px;
     }
-  }
+
+    .celebration-box p {
+        font-size: 16px;
+    }
+
+    /* Dodatni stil za povećanje fonta samo na mobilnim uređajima */
+    @media screen and (max-width: 768px) {
+        .celebration-box {
+            font-size: 18px !important; /* Prilagodite prema potrebi */
+        }
+    }
+}
+
+
+
 
 
 
