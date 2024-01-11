@@ -1337,7 +1337,12 @@ body {
   }
   
 
-
+  @media screen and (max-width: 768px) {
+    .celebration-box {
+       margin-right: 30px;
+        margin-top: 200px;
+    }
+  }
 
 
 
